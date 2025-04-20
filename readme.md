@@ -110,5 +110,5 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 ## **🚀 Projeyi Klonla (Clone the Project)**
 
-git clone https://github.com/kullanici-adiniz/python-socket-client.git
+git clone https://github.com/ofarukuyduran/heartbeat-based-tcp-server-client.git
 

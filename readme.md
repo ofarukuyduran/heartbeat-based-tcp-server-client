@@ -32,25 +32,25 @@ Python 3.7+
 #### **İstemci için (Client Configuration):**
 
 `client.py` içindeki `ClientConfig` alanını kendi sunucunuza göre düzenleyin:
-
-config \= ClientConfig(  
-    host="192.168.1.107",         \# Sunucu IP adresi / Server IP  
-    port=54321,                   \# Sunucu portu / Server port  
-    reconnect\_attempts=0,        \# 0 \= sınırsız yeniden deneme / 0 \= unlimited retry  
-    heartbeat\_interval=2,        \# Ping gönderme aralığı / Ping interval (seconds)  
-    receive\_timeout=3,           \# Veri bekleme zaman aşımı / Receive timeout (seconds)  
-    pong\_timeout=5,              \# Pong alınmazsa kopar / Pong timeout (seconds)  
-    log\_file="client.log"        \# Hataların loglanacağı dosya / Error log file  
+```
+config = ClientConfig(  
+    host="192.168.1.107",         # Sunucu IP adresi / Server IP  
+    port=54321,                   # Sunucu portu / Server port  
+    reconnect_attempts=0,        # 0 = sınırsız yeniden deneme / 0 = unlimited retry  
+    heartbeat_interval=2,        # Ping gönderme aralığı / Ping interval (seconds)  
+    receive\_timeout=3,           # Veri bekleme zaman aşımı / Receive timeout (seconds)  
+    pong_timeout=5,              # Pong alınmazsa kopar / Pong timeout (seconds)  
+    log_file="client.log"        # Hataların loglanacağı dosya / Error log file  
 )
-
+```
 #### **Sunucu için (Server Configuration):**
 
 `server.py` içindeki varsayılan ayarlar:
-
-host \= '0.0.0.0'  \# Tüm ağ arayüzlerinden bağlantı kabul eder / Accept connections from all interfaces  
-port \= 54321      \# Dinlenecek port / Listening port  
-heartbeat\_timeout \= 10  \# 10 saniye ping alınmazsa bağlantı kesilir / Disconnect if no ping for 10 seconds
-
+```
+host = '0.0.0.0'  # Tüm ağ arayüzlerinden bağlantı kabul eder / Accept connections from all interfaces  
+port = 54321      # Dinlenecek port / Listening port  
+heartbeat_timeout = 10  \# 10 saniye ping alınmazsa bağlantı kesilir / Disconnect if no ping for 10 seconds
+```
 ### **3\. Çalıştır (Run)**
 
 #### **Sunucuyu başlat (Start the Server):**
